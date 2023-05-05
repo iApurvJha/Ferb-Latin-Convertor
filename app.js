@@ -1,6 +1,7 @@
 var textarea = document.querySelector("#textarea")
 var btntranslate = document.querySelector("#btn-translate")
 var output = document.querySelector("#output")
+var btndtextToSpeech = document.querySelector("#btn-textToSpeech")
 var pause = document.querySelector("#pause")
 var resume = document.querySelector("#resume")
 var cancel = document.querySelector("#cancel")
@@ -45,6 +46,7 @@ function FerbLatin(){
     .catch(errorHandler)
 }
 
+btndtextToSpeech.addEventListener("click",textToSpeech)
 btntranslate.addEventListener("click",FerbLatin)
 pause.addEventListener("click",pauseSpeech)
 resume.addEventListener("click",resumeSpeech)
