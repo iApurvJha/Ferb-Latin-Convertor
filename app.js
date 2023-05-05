@@ -25,8 +25,27 @@ function cancelSpeech(){
     window.speechSynthesis.cancel()
 }
 
+function urlGen(){
+    return "https://api.funtranslations.com/translate/ferb-latin.json"+"?"+"text="+textarea.value
+}
+function errorHandler(error){
+    console.log("error",error)
+    alert("some error occured try again after some time")
+}
 
-btntranslate.addEventListener("click",textToSpeech)
+function FerbLatin(){
+    var url = urlGen()
+    console.log(url)
+    fetch(url)
+    .then(response => response.json())
+    .then(json => {
+        var translatedText=json.contents.translated
+        output.innerText=translatedText
+    })
+    .catch(errorHandler)
+}
+
+btntranslate.addEventListener("click",FerbLatin)
 pause.addEventListener("click",pauseSpeech)
 resume.addEventListener("click",resumeSpeech)
 cancel.addEventListener("click",cancelSpeech)
