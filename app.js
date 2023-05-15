@@ -26,6 +26,7 @@ function cancelSpeech(){
     window.speechSynthesis.cancel()
 }
 
+
 function urlGen(){
     return "https://api.funtranslations.com/translate/ferb-latin.json"+"?"+"text="+textarea.value
 }
@@ -33,6 +34,7 @@ function errorHandler(error){
     console.log("error",error)
     alert("some error occured try again after some time")
 }
+
 
 function FerbLatin(){
     var url = urlGen()
