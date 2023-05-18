@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:wght@700&display=swap');
+
+:root {
+    --primary-colour--: #2dd4bf;
+  }
+*{
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: var(--primary-colour--);
+}
+.container-center{
+    text-align: center;
+    margin: auto;
+}
+
+footer{
+    width: 35rem;
+}
+textarea{
+    border-radius: 7px;
+    border: 2px solid black;
+    /* height: 150px;  */
+    width: 600px;
+}
+#output{
+    border-radius: 7px;
+    border: 2px solid black; 
+     height: 125px;  
+    width: 600px; 
+}
+.padding-bottom{
+    padding-bottom: 3rem;
+}
+.padding-top{
+    padding-top: 3rem;
+}
+.footer{
+    margin-top: 3rem;
+}
+
+.padding-left{
+    padding-left: 2px;
+
+}
+.padding-right{
+    padding-right: 2px;
+}
+button{
+    background-color: var(--primary-colour--);
+}
+button:hover{
+    background-color: black;
+    color: var(--primary-colour--);
+}

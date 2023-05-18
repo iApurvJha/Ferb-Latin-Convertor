@@ -5,29 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Ferb-Latin-Convertor</title>
 </head>
 
 <body>
-    <textarea placeholder="Enter your text in english to convert it to Ferb-Latin-Convertor" id="textarea" cols="60"
-        rows="10" spellcheck="false"></textarea>
-    <button id="btn-translate" >
-        Translate
-    </button>
-    <button id="btn-textToSpeech">
-        TextToSpeech
-    </button>
-    <button id="pause">
-        Pause
-    </button>
-    <button id="resume">
-        Resume
-    </button>
-    <button id="cancel">
-        Cancel
-    </button>
+    <div class="container-center">
 
-    <div id="output" style="border: 2px solid black; height: 150px; width: 600px;"></div>
+        <h1>FERB LATIN TRANSLATOR</h1>
+    </div>
+    <div class="container-center">
+
+        <textarea placeholder="Enter your text in english to convert it to Ferb-Latin-Convertor" id="textarea" cols="60"
+            rows="10" spellcheck="false"></textarea>
+    </div>
+    <div class="container-center padding-bottom padding-top"> 
+
+            <button id="btn-translate" >
+                Translate To Ferb's Lnaguage
+            </button>
+        <button id="btn-textToSpeech">
+            TextToSpeech
+        </button>
+
+        <button id="pause">
+            Pause
+        </button>
+        <button id="resume">
+            Resume
+        </button>
+        <button id="cancel">
+            Cancel
+        </button>
+    </div>
+<div class="container-center">
+    <!-- <div class="container-center padding-bottom" id="output" ></div> -->
+    <textarea name="" id="output" cols="30" rows="10"></textarea>
+</div>
+    <div class="footer">
+
+        <footer class="container-center ">
+            about:
+            Convert from English to Ferb Latin. The Ferb Latin is a character that appeared on The
+            Phineas and Ferb Show. The Ferb Latin does not speak any known language, but his nonsense words are so widley
+            interpreted as Ferb Latin.
+        </footer>
+    </div>
     <script src="app.js"></script>
 </body>
 
